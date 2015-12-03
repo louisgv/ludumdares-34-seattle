@@ -6,7 +6,7 @@ Front page for Seattle's 34th LudumDares, on-site.
 Just run
 
 ```zsh
-sudo npm install
+npm install
 gulp
 ```
 

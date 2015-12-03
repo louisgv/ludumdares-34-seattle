@@ -31,6 +31,11 @@
     "jquery": "$"
   },
   "devDependencies": {
+
+  },
+  "dependencies": {
+    "raf": "^2.0.4",
+    "react-inlinesvg": "^0.3.0",
     "browser-sync": "^2.5.0",
     "browserify": "^9.0.3",
     "browserify-shim": "^3.8.3",
@@ -52,9 +57,5 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^2.6.2"
-  },
-  "dependencies": {
-    "raf": "^2.0.4",
-    "react-inlinesvg": "^0.3.0"
   }
 }
