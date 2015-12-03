@@ -22255,8 +22255,8 @@ module.exports = React.createClass({displayName: "exports",
         React.createElement("div", {className: "text"}, 
           React.createElement("h2", {className: "section title"}, "Extra EXP"), 
           React.createElement("p", {className: "description"}, 
-            "LudumDares is the ", React.createElement("b", null, " largest indie gamejam "), 
-          "recoganized globally. This winter, over 100 top game designers will gather at the ", React.createElement("b", null, " Seattle Surf Incubator "), 
+            "LudumDares is the ", React.createElement("strong", null, " largest indie gamejam "), 
+          "recoganized globally. This winter, over 100 top game designers will gather at the ", React.createElement("strong", null, " Seattle Surf Incubator "), 
             "to networking and make awesome games.")
         ), 
         React.createElement("img", {className: "trees", src: "images/trees.svg"})
@@ -22484,76 +22484,97 @@ module.exports = React.createClass({displayName: "exports",
     return {
       eventsByDay: {
         1: [{
-          number: 3,
-          period: 'pm',
-          title: 'Check-in'
-        }, {
           number: 5,
           period: 'pm',
-          title: 'Opening Ceremony'
+          title: 'Mingle-ing'
+        }, {
+          number: 6,
+          period: 'pm',
+          title: 'Theme announced'
+        }, {
+          number: 6,
+          period: '15',
+          title: 'Dinner!'
+        }, {
+          number: 6,
+          period: '30',
+          title: 'Keynotes'
+        }, {
+          number: 6,
+          period: '45',
+          title: 'Team Forming'
         }, {
           number: 7,
           period: 'pm',
-          title: 'Start Hacking!'
+          title: 'Jam Starts'
+        }],
+        2: [{
+          number: 11,
+          period: 'am',
+          title: 'Lunch'
         }, {
-          number: 8,
+          number: 6,
+          period: 'pm',
+          title: 'Dinner'
+        }],
+        3: [{
+          number: 11,
+          period: 'am',
+          title: 'Lunch'
+        }, {
+          number: 5,
           period: 'pm',
           title: 'Dinner'
         }, {
-          number: 12,
-          period: 'am',
-          title: 'Midnight Snack Attack'
-        }],
-        2: [{
-          number: 8,
-          period: 'am',
-          title: 'Breakfast'
-        }, {
-          number: 12,
+          number: 6,
           period: 'pm',
+          title: 'Singler Pens Down!'
+        }, {
+          number: 7,
+          period: 'pm',
+          title: 'LudumDares Upload Deadlines'
+        },{
+          number: 7,
+          period: '10',
+          title: 'Single Show Off'
+        }, {
+          number: 8,
+          period: 'pm',
+          title: 'Single Prizes'
+        }],
+        4: [{
+          number: 11,
+          period: 'am',
           title: 'Lunch'
         }, {
           number: 5,
           period: 'pm',
-          title: 'Submit Your Hack!'
+          title: 'Dinner'
         }, {
           number: 6,
           period: 'pm',
-          title: 'Judging and Dinner'
+          title: 'Pens Down!'
+        }, {
+          number: 7,
+          period: 'pm',
+          title: 'LudumDares Upload Deadlines'
+        },{
+          number: 7,
+          period: '10',
+          title: 'Jam Show Off'
         }, {
           number: 8,
           period: 'pm',
-          title: 'Closing Ceremony'
+          title: 'Judge and Prizes'
+        },{
+          number: 8,
+          period: '30',
+          title: 'Closing Ceremony / Clean Up'
         }, {
           number: 9,
           period: 'pm',
-          title: 'Go Home'
-        }],
-        3: [{
-          number: 8,
-          period: 'am',
-          title: 'Breakfast'
-        }, {
-          number: 12,
-          period: 'pm',
-          title: 'Lunch'
-        }, {
-          number: 5,
-          period: 'pm',
-          title: 'Submit Your Hack!'
-        }, {
-          number: 6,
-          period: 'pm',
-          title: 'Judging and Dinner'
-        }, {
-          number: 8,
-          period: 'pm',
-          title: 'Closing Ceremony'
-        }, {
-          number: 9,
-          period: 'pm',
-          title: 'Go Home'
-        }],
+          title: 'Home Coming'
+        }]
       }
     };
   },
@@ -22601,6 +22622,10 @@ module.exports = React.createClass({displayName: "exports",
           React.createElement("li", {className: "day"}, 
             React.createElement("h3", {className: "day-title"}, " Monday December 13th"), 
             getEvents(3)
+          ), 
+          React.createElement("li", {className: "day"}, 
+            React.createElement("h3", {className: "day-title"}, " Monday December 13th"), 
+            getEvents(4)
           )
         ), 
         React.createElement(Boat, null), 
