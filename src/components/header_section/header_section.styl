@@ -1,0 +1,79 @@
+@import '../../constants'
+
+@keyframes buttonShake
+  0%
+    transform rotate(0)
+  10%
+    transform rotate(0)
+  10.5%
+    transform rotate(10deg)
+  11%
+    transform rotate(-10deg)
+  11.5%
+    transform rotate(10deg)
+  12%
+    transform rotate(0)
+
+.HeaderSection
+  position fixed
+  background white
+  z-index 100
+  height 60px
+  overflow hidden
+  padding websitePadding * 0.3
+
+  .logo
+    display inline-block
+    margin-top 5px
+    margin-left 10px
+    width 120px
+
+  .nav
+    display inline-block
+    vertical-align top
+
+    li
+      display inline-block
+      margin-left 30px
+
+      &.register-button
+        animation buttonShake 40s infinite
+
+        @media mediaPhone
+          margin-left 7px
+
+          .Button
+            padding 10px
+            font-size fontSizeSmall
+
+      // Hide nav links
+      &:not(.register-button)
+        @media mediaTablet
+          display none
+
+      .Button
+        padding 5px 20px
+        font-size fontSizeLarge
+        color colorGray
+
+        &:hover:not(.solid)
+          background #eee
+
+  .social-buttons
+    float right
+    display inline-block
+
+    li
+      display inline-block
+      margin-left 30px
+
+      .Button
+        padding 8px
+        transition opacity transitionSpeed
+
+        &:hover
+          opacity 0.6
+
+        .icon
+          width 25px
+          vertical-align middle

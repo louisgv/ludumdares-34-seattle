@@ -1,0 +1,47 @@
+@import '../../constants'
+
+.FAQSection
+  background linear-gradient(colorBlue, colorBlueDark)
+  color white
+  position relative
+
+  .section.title
+    top 10px
+    position absolute
+
+  .stones
+    bottom -7px
+    width 102%
+    left -5px
+    display block
+    position inherit
+
+    @media mediaPhone
+      bottom 0
+
+  .faqs
+    padding websitePadding * 3 websitePadding websitePadding websitePadding
+
+    .faq
+      display inline-block
+      width 50%
+      vertical-align top
+      padding 0 websitePadding
+
+      @media mediaPhone
+        display block
+        width 100%
+        padding 0
+
+      .qa
+        margin-top 20px
+
+        .question
+          margin-bottom 5px
+
+    a
+      transition border-bottom transitionSpeed
+      border-bottom 1px dotted rgba(white, 0.3)
+
+      &:hover
+        border-bottom 1px dotted rgba(white, 0.7)

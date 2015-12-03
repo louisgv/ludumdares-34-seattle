@@ -1,0 +1,61 @@
+@keyframes rock
+  0%
+    transform rotate(10deg) translateY(10px)
+  50%
+    transform rotate(-10deg) translateY(0px)
+  100%
+    transform rotate(10deg) translateY(10px)
+
+@keyframes boat-rotate
+  0%
+    transform rotateY(0deg)
+  49%
+    transform rotateY(0deg)
+  50%
+    transform rotateY(180deg)
+  99%
+    transform rotateY(180deg)
+  10%
+    transform rotateY(0deg)
+
+@keyframes boat-back-and-forth
+  0%
+    left 10%
+  20%
+    left 20%
+  50%
+    left 70%
+  70%
+    left 40%
+  100%
+    left 10%
+
+@keyframes up-and-down
+  0%
+    transform translateY(10px)
+  50%
+    transform translateY(0px)
+  100%
+    transform translateY(10px)
+
+boatRockAnimationTime = 3s
+boatTravelTime = 80s
+
+.Boat
+  position absolute
+  width 8%
+  animation up-and-down boatRockAnimationTime ease-in-out infinite, boat-back-and-forth boatTravelTime ease-in-out infinite
+  animation-delay -15s
+  
+  .boat-container
+    animation boat-rotate boatTravelTime ease-in-out infinite
+    animation-delay -15s
+
+    .boat-img
+      width 100%
+      transform-origin 50% 80%
+      animation-name rock
+      animation-duration boatRockAnimationTime
+      animation-timing-function ease-in-out
+      animation-iteration-count infinite
+      animation-delay -2s

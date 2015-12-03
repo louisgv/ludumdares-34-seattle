@@ -1,0 +1,102 @@
+@import '../../constants'
+timeSize = 50px
+
+@keyframes left-right
+  0%
+    left -20px
+  50%
+    left -10px
+  100%
+    left -20px
+
+.ScheduleSection
+  position relative
+  background linear-gradient(colorPurpleLight, colorPurple)
+  color white
+
+  .section.title
+    padding-top websitePadding
+
+  .days
+    padding-bottom 80px
+
+    .day
+      display inline-block
+      width 50%
+      padding 0 10%
+      margin-top 20px
+      vertical-align top
+
+      @media mediaTablet
+        padding 0 5%
+
+      // 1 column
+      @media mediaPhone
+        display block
+        width 100%
+        padding 0 10%
+
+      .day-title
+        margin-bottom 20px
+        font-size fontSizeXLarge
+
+        @media mediaPhone
+          font-size fontSizeLarge
+          font-weight 700
+          text-align center
+
+      .events
+        margin-left 10px
+
+        @media mediaPhone
+          margin-left 0
+
+        .event
+          margin-bottom 20px
+          overflow hidden
+
+          .time
+            width timeSize
+            height timeSize
+            display inline-block
+            text-align center
+            border 2px solid colorBlueLight
+            border-radius 50%
+            line-height 1
+            float left
+
+            .number
+              font-size 26px
+              font-weight 700
+              margin-top 4px
+
+            .period
+              text-transform uppercase
+              font-size 12px
+
+          .event-title
+            padding-top 10px
+            margin-left 30px
+            vertical-align top
+            display inline-block
+            font-size fontSizeLarge
+            float right
+            position absolute
+
+            @media mediaPhone
+              margin-left 10px
+
+  .sea
+    position absolute
+    width 110%
+    left -20px
+    bottom -10px
+    animation-name left-right
+    animation-duration 10s
+    animation-timing-function ease-in-out
+    animation-iteration-count infinite
+
+    &:nth-child(2n)
+      transform translateX(20px)
+      animation-duration 3s
+      opacity 0.4

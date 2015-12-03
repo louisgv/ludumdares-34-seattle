@@ -1,0 +1,82 @@
+@import '../../constants'
+
+.SponsorSection
+  background linear-gradient(colorBlueDark, colorBlueDarker 15%, colorBlueDarkest)
+  position relative
+  color white
+  padding websitePadding
+  overflow hidden
+
+  .anchor
+    position absolute
+    right 15%
+    bottom -6px
+    transform rotate(30deg)
+    width 70px
+    opacity 0.4
+
+    @media mediaPhone
+      bottom -3px
+      width 30px
+
+  .subtitle
+    margin-top 30px
+    text-align center
+
+    .sponsor-cta
+      font-weight 700
+      transition border-bottom transitionSpeed
+      border-bottom 1px dotted rgba(white, 0.3)
+
+      &:hover
+        border-bottom 1px dotted rgba(white, 0.7)
+
+  .prev-sponsors
+    line-height 2
+    margin 20px auto
+    max-width 1000px
+    overflow hidden
+    text-align center
+
+    li
+      opacity 0.7
+      display inline-block
+      margin-right 20px
+
+      &:not(:last-child)::after
+        content '•'
+        margin-left 20px
+
+  .squid
+    height: 200px
+    opacity: 0.4
+    position: absolute
+    margin-top: 60%
+
+  .tiers
+    img
+      width 100%
+    ul
+      text-align center
+    li
+      margin 2%
+      display inline-block
+      vertical-align middle
+
+    .platinum li
+      width 80%
+    .gold li
+      width 27%
+      &.extraSmall
+        width 10%
+    .silver, .partners
+      li
+        width 20%
+        &.extraSmall
+          width 11%
+    .bronze li
+      width 10%
+      &.extraLarge
+        width 15%
+      &.extraSmall
+        width 7%
