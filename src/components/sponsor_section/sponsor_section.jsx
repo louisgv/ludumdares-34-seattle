@@ -17,7 +17,7 @@ module.exports = React.createClass({
           <ul className='platinum'>
             <li>
               <a href="http://www.amazon.com/" target="_blank">
-                <img ref='img' src='images/company_logos/amazon.png'/>
+                <img ref='img' src='images/company_logos/amazon-w.png'/>
               </a>
             </li>
           </ul>

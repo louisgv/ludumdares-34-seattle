@@ -22746,7 +22746,7 @@ module.exports = React.createClass({displayName: "exports",
           React.createElement("ul", {className: "platinum"}, 
             React.createElement("li", null, 
               React.createElement("a", {href: "http://www.amazon.com/", target: "_blank"}, 
-                React.createElement("img", {ref: "img", src: "images/company_logos/amazon.png"})
+                React.createElement("img", {ref: "img", src: "images/company_logos/amazon-w.png"})
               )
             )
           )

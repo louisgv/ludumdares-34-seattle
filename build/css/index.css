@@ -1116,9 +1116,6 @@ body {
   position: absolute;
   margin-top: 60%;
 }
-.SponsorSection .tiers {
-  height: 270px;
-}
 .SponsorSection .tiers img {
   width: 100%;
 }
@@ -1131,7 +1128,7 @@ body {
   vertical-align: middle;
 }
 .SponsorSection .tiers .platinum li {
-  width: 80%;
+  width: 81%;
 }
 .SponsorSection .tiers .gold li {
   width: 27%;
