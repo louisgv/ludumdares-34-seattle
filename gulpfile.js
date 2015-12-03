@@ -119,7 +119,7 @@ gulp.task('serve', function() {
       baseDir: './',
       open: true
     },
-    port: 8000
+    port: process.env.PORT || 1314
   });
 });
 
