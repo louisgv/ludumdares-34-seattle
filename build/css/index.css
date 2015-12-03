@@ -838,6 +838,7 @@ body {
           animation: titleLogoShake 20s infinite;
 }
 .SplashSection .center .sign-up {
+  color: #fff;
   background: #ff8000;
   display: inline;
   border-radius: 10px;
