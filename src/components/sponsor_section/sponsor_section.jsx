@@ -13,8 +13,15 @@ module.exports = React.createClass({
         <img className='squid' src='images/squid.svg'/>
         <h2 className='section title'>Sponsors</h2>
 
-      <div className='tiers'>
+        <div className='tiers'>
           <ul className='platinum'>
+            <li>
+              <a href="http://www.amazon.com/" target="_blank">
+                <img ref='img' src='images/company_logos/amazon.png'/>
+              </a>
+            </li>
+          </ul>
+          {/*<ul className='platinum'>
             <li>
               <a href="http://microsoft.com" target="_blank"><img ref='img' src='images/company_logos/microsoft.png'/></a>
             </li>
@@ -116,8 +123,9 @@ module.exports = React.createClass({
       width: "160px"
       }}/></a>
             </li>
-          </ul>
-      </div>
+          </ul>*/}
+
+        </div>
 
         <div className='bubbles'>
           <Bubble origin={bubbleOrigin}/>

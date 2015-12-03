@@ -7,7 +7,7 @@ module.exports = React.createClass({
         <h2 className='section title'>FAQ</h2>
         <div className='faqs'>
           <ul className='faq'>
-            <li className='qa'>
+            {/*<li className='qa'>
               <h4 className='question'>What is LudumDares?</h4>
               <p>DubHacks is the largest collegiate hackathon in the Pacific Northwest. The first of its kind in the Pacific Northwest, student developers and designers gather at the University of Washington in Seattle campus to form teams and build projects with the goal of creating solutions to real-world problems and learning new technologies. This is the second-ever DubHacks event.</p>
             </li>
@@ -56,7 +56,7 @@ module.exports = React.createClass({
             <li className='qa'>
               <h4 className='question'>I have a different question. Who can I ask?</h4>
               <p>Reach out to us at via <a href='http://twitter.com/dubhacks'>Twitter</a>, <a href='http://facebook.com/uwhacks'>Facebook</a>, or send an email to <a href='mailto:info@dubhacks.co'>info@dubhacks.co</a>.</p>
-            </li>
+            </li>*/}
           </ul>
         </div>
       </section>

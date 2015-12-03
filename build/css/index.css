@@ -1116,8 +1116,7 @@ body {
   margin-top: 60%;
 }
 .SponsorSection .tiers {
-  visibility: hidden;
-  height: 100px;
+  height: 270px;
 }
 .SponsorSection .tiers img {
   width: 100%;

@@ -22277,57 +22277,57 @@ module.exports = React.createClass({displayName: "exports",
       React.createElement("section", {className: "FAQSection page-section", id: "faq"}, 
         React.createElement("h2", {className: "section title"}, "FAQ"), 
         React.createElement("div", {className: "faqs"}, 
-          React.createElement("ul", {className: "faq"}, 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "What is LudumDares?"), 
-              React.createElement("p", null, "DubHacks is the largest collegiate hackathon in the Pacific Northwest. The first of its kind in the Pacific Northwest, student developers and designers gather at the University of Washington in Seattle campus to form teams and build projects with the goal of creating solutions to real-world problems and learning new technologies. This is the second-ever DubHacks event.")
-            ), 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "Who can attend?"), 
-              React.createElement("p", null, "Undergraduate university and high school students of all backgrounds are encouraged to apply and attend DubHacks.")
-            ), 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "Where is it?"), 
-              React.createElement("p", null, "The opening and closing ceremonies will take place in Kane Hall on the University of Washington campus. Hacking and other activities will take place in Johnson Hall and Mary Gates Hall.")
-            ), 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "What about travel reimbursement?"), 
-              React.createElement("p", null, "We will provide travel reimbursement to select participants. Up to $150 travel reimbursement for out-of-state students and up to $50 for in-state participants provided a valid receipt.")
-            ), 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "How much does this event cost?"), 
-              React.createElement("p", null, "Absolutely free. We will provide you WiFi, meals, caffeine, swag, and the workspace.")
-            ), 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "What should I build?"), 
-              React.createElement("p", null, "Anything really. The project is up to you and your team. You have 24 hours to make anything, ranging from web apps, desktop apps, mobile apps, or even hardware.")
-            )
-          ), 
-          React.createElement("ul", {className: "faq"}, 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "How big are teams?"), 
-              React.createElement("p", null, "A team can be as big as 5 people. We'll help with pairing team members if you don't come with one.")
-            ), 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "How do applications work?"), 
-              React.createElement("p", null, "Applications for out-of-state attendees must be submitted by September 18th. All other applications are due October 3rd.")
-            ), 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "Will you have hardware prototyping equipment?"), 
-              React.createElement("p", null, "Yes. Our partners at MLH will have limited stock of Oculus Rifts, Myo arm-bands, Leap Motions, Arduinos, 3D printers and more to give out to hackers for the duration of the hackathon.")
-            ), 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "Are we allowed to build on past projects?"), 
-              React.createElement("p", null, "A hackathon is an experience to build on something completely new within a set amount of time. With that in mind, you cannot work on past projects. Using your own APIs or third-party APIs is alright as long as the project is a fresh start.")
-            ), 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "What should I bring?"), 
-              React.createElement("p", null, "Please bring a laptop, charger, student id and passion! Besides that, a toothbrush, sleeping bag/blanket, and change of clothes is recommended.")
-            ), 
-            React.createElement("li", {className: "qa"}, 
-              React.createElement("h4", {className: "question"}, "I have a different question. Who can I ask?"), 
-              React.createElement("p", null, "Reach out to us at via ", React.createElement("a", {href: "http://twitter.com/dubhacks"}, "Twitter"), ", ", React.createElement("a", {href: "http://facebook.com/uwhacks"}, "Facebook"), ", or send an email to ", React.createElement("a", {href: "mailto:info@dubhacks.co"}, "info@dubhacks.co"), ".")
-            )
+          React.createElement("ul", {className: "faq"}
+            /*<li className='qa'>
+              <h4 className='question'>What is LudumDares?</h4>
+              <p>DubHacks is the largest collegiate hackathon in the Pacific Northwest. The first of its kind in the Pacific Northwest, student developers and designers gather at the University of Washington in Seattle campus to form teams and build projects with the goal of creating solutions to real-world problems and learning new technologies. This is the second-ever DubHacks event.</p>
+            </li>
+            <li className='qa'>
+              <h4 className='question'>Who can attend?</h4>
+              <p>Undergraduate university and high school students of all backgrounds are encouraged to apply and attend DubHacks.</p>
+            </li>
+            <li className='qa'>
+              <h4 className='question'>Where is it?</h4>
+              <p>The opening and closing ceremonies will take place in Kane Hall on the University of Washington campus. Hacking and other activities will take place in Johnson Hall and Mary Gates Hall.</p>
+            </li>
+            <li className='qa'>
+              <h4 className='question'>What about travel reimbursement?</h4>
+              <p>We will provide travel reimbursement to select participants. Up to $150 travel reimbursement for out-of-state students and up to $50 for in-state participants provided a valid receipt.</p>
+            </li>
+            <li className='qa'>
+              <h4 className='question'>How much does this event cost?</h4>
+              <p>Absolutely free. We will provide you WiFi, meals, caffeine, swag, and the workspace.</p>
+            </li>
+            <li className='qa'>
+              <h4 className='question'>What should I build?</h4>
+              <p>Anything really. The project is up to you and your team. You have 24 hours to make anything, ranging from web apps, desktop apps, mobile apps, or even hardware.</p>
+            </li>
+          </ul>
+          <ul className='faq'>
+            <li className='qa'>
+              <h4 className='question'>How big are teams?</h4>
+              <p>A team can be as big as 5 people. We'll help with pairing team members if you don't come with one.</p>
+            </li>
+            <li className='qa'>
+              <h4 className='question'>How do applications work?</h4>
+              <p>Applications for out-of-state attendees must be submitted by September 18th. All other applications are due October 3rd.</p>
+            </li>
+            <li className='qa'>
+              <h4 className='question'>Will you have hardware prototyping equipment?</h4>
+              <p>Yes. Our partners at MLH will have limited stock of Oculus Rifts, Myo arm-bands, Leap Motions, Arduinos, 3D printers and more to give out to hackers for the duration of the hackathon.</p>
+            </li>
+            <li className='qa'>
+              <h4 className='question'>Are we allowed to build on past projects?</h4>
+              <p>A hackathon is an experience to build on something completely new within a set amount of time. With that in mind, you cannot work on past projects. Using your own APIs or third-party APIs is alright as long as the project is a fresh start.</p>
+            </li>
+            <li className='qa'>
+              <h4 className='question'>What should I bring?</h4>
+              <p>Please bring a laptop, charger, student id and passion! Besides that, a toothbrush, sleeping bag/blanket, and change of clothes is recommended.</p>
+            </li>
+            <li className='qa'>
+              <h4 className='question'>I have a different question. Who can I ask?</h4>
+              <p>Reach out to us at via <a href='http://twitter.com/dubhacks'>Twitter</a>, <a href='http://facebook.com/uwhacks'>Facebook</a>, or send an email to <a href='mailto:info@dubhacks.co'>info@dubhacks.co</a>.</p>
+            </li>*/
           )
         )
       )
@@ -22742,111 +22742,119 @@ module.exports = React.createClass({displayName: "exports",
         React.createElement("img", {className: "squid", src: "images/squid.svg"}), 
         React.createElement("h2", {className: "section title"}, "Sponsors"), 
 
-      React.createElement("div", {className: "tiers"}, 
+        React.createElement("div", {className: "tiers"}, 
           React.createElement("ul", {className: "platinum"}, 
             React.createElement("li", null, 
-              React.createElement("a", {href: "http://microsoft.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/microsoft.png"}))
-            )
-          ), 
-          React.createElement("ul", {className: "gold"}, 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "https://developers.google.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/Google_2015_logo.svg"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://a16z.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/a16z.svg"}))
-            ), 
-            React.createElement("li", {className: "extraSmall"}, 
-              React.createElement("a", {href: "http://developers.facebook.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/facebook.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://qumulo.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/qumulo.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://isilon.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/isilon.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://disneytechjobs.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/disney.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://ibm.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/btnIBM.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://concur.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/logos_concur_horizontal.png"}))
-            )
-          ), 
-          React.createElement("ul", {className: "silver"}, 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://www.taser.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/taser.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://www.amazon.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/amazon.png"}))
-            ), 
-            React.createElement("li", {className: "extraSmall"}, 
-              React.createElement("a", {href: "http://www.ge.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/ge.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://zillow.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/ZillowLogo.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://venmo.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/venmo.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://libertymutual.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/libertymutual.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://www.clarifai.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/Clarifai.png"}))
-            )
-          ), 
-          React.createElement("ul", {className: "bronze"}, 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://epic.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/epic_logo.png"}))
-            ), 
-            React.createElement("li", {className: "extraLarge"}, 
-              React.createElement("a", {href: "http://extrahop.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/extrahop.png"}))
-            ), 
-            React.createElement("li", {className: "extraLarge"}, 
-              React.createElement("a", {href: "http://algorithmia.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/algorithmia.png"}))
-            ), 
-            React.createElement("li", {className: "extraSmall"}, 
-              React.createElement("a", {href: "http://www.go.co/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/co2.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "https://www.soylent.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/soylent.svg"}))
-            ), 
-            React.createElement("li", {className: "extraSmall"}, 
-              React.createElement("a", {href: "http://www.bonsaimediagroup.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/bonsai.gif"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://www.intel.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/intel.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "https://www.namecheap.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/namecheap.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://www.shippable.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/shippable.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "http://www.wolfram.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/wolfram.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "https://comotion.uw.edu/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/comotion.svg"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "https://www.waopportunityscholarship.org/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/wsos.png"}))
-            ), 
-            React.createElement("li", null, 
-              React.createElement("a", {href: "https://www.tune.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/tune.png"}))
-            )
-          ), 
-          React.createElement("h2", {className: "section title"}, "Partners"), 
-          React.createElement("ul", {className: "partners"}, 
-            React.createElement("li", null, 
-              React.createElement("a", {id: "mlh-trust-badge", href: "https://mlh.io/?utm_campaign=Trust%20Badge", target: "_blank"}, React.createElement("img", {src: "https://s3.amazonaws.com/logged-assets/trust-badge/f2015.png", alt: "MLH Official - Fall 2015", style: {
-      width: "160px"
-      }}))
+              React.createElement("a", {href: "http://www.amazon.com/", target: "_blank"}, 
+                React.createElement("img", {ref: "img", src: "images/company_logos/amazon.png"})
+              )
             )
           )
-      ), 
+          /*<ul className='platinum'>
+            <li>
+              <a href="http://microsoft.com" target="_blank"><img ref='img' src='images/company_logos/microsoft.png'/></a>
+            </li>
+          </ul>
+          <ul className='gold'>
+            <li>
+              <a href="https://developers.google.com/" target="_blank"><img ref='img' src='images/company_logos/Google_2015_logo.svg'/></a>
+            </li>
+            <li>
+              <a href="http://a16z.com/" target="_blank"><img ref='img' src='images/company_logos/a16z.svg'/></a>
+            </li>
+            <li className='extraSmall'>
+              <a href="http://developers.facebook.com" target="_blank"><img ref='img' src='images/company_logos/facebook.png'/></a>
+            </li>
+            <li>
+              <a href="http://qumulo.com/" target="_blank"><img ref='img' src='images/company_logos/qumulo.png'/></a>
+            </li>
+            <li>
+              <a href="http://isilon.com/" target="_blank"><img ref='img' src='images/company_logos/isilon.png'/></a>
+            </li>
+            <li>
+              <a href="http://disneytechjobs.com/" target="_blank"><img ref='img' src='images/company_logos/disney.png'/></a>
+            </li>
+            <li>
+              <a href="http://ibm.com" target="_blank"><img ref='img' src='images/company_logos/btnIBM.png'/></a>
+            </li>
+            <li>
+              <a href="http://concur.com" target="_blank"><img ref='img' src='images/company_logos/logos_concur_horizontal.png'/></a>
+            </li>
+          </ul>
+          <ul className='silver'>
+            <li>
+              <a href="http://www.taser.com/" target="_blank"><img ref='img' src='images/company_logos/taser.png'/></a>
+            </li>
+            <li>
+              <a href="http://www.amazon.com/" target="_blank"><img ref='img' src='images/company_logos/amazon.png'/></a>
+            </li>
+            <li className='extraSmall'>
+              <a href="http://www.ge.com/" target="_blank"><img ref='img' src='images/company_logos/ge.png'/></a>
+            </li>
+            <li>
+              <a href="http://zillow.com" target="_blank"><img ref='img' src='images/company_logos/ZillowLogo.png'/></a>
+            </li>
+            <li>
+              <a href="http://venmo.com" target="_blank"><img ref='img' src='images/company_logos/venmo.png'/></a>
+            </li>
+            <li>
+              <a href="http://libertymutual.com" target="_blank"><img ref='img' src='images/company_logos/libertymutual.png'/></a>
+            </li>
+            <li>
+              <a href="http://www.clarifai.com/" target="_blank"><img ref='img' src='images/company_logos/Clarifai.png'/></a>
+            </li>
+          </ul>
+          <ul className='bronze'>
+            <li>
+              <a href="http://epic.com" target="_blank"><img ref='img' src='images/company_logos/epic_logo.png'/></a>
+            </li>
+            <li className='extraLarge'>
+              <a href="http://extrahop.com" target="_blank"><img ref='img' src='images/company_logos/extrahop.png'/></a>
+            </li>
+            <li className='extraLarge'>
+              <a href="http://algorithmia.com" target="_blank"><img ref='img' src='images/company_logos/algorithmia.png'/></a>
+            </li>
+            <li className='extraSmall'>
+              <a href="http://www.go.co/" target="_blank"><img ref='img' src='images/company_logos/co2.png'/></a>
+            </li>
+            <li>
+              <a href="https://www.soylent.com/" target="_blank"><img ref='img' src='images/company_logos/soylent.svg'/></a>
+            </li>
+            <li className='extraSmall'>
+              <a href="http://www.bonsaimediagroup.com/" target="_blank"><img ref='img' src='images/company_logos/bonsai.gif'/></a>
+            </li>
+            <li>
+              <a href="http://www.intel.com/" target="_blank"><img ref='img' src='images/company_logos/intel.png'/></a>
+            </li>
+            <li>
+              <a href="https://www.namecheap.com/" target="_blank"><img ref='img' src='images/company_logos/namecheap.png'/></a>
+            </li>
+            <li>
+              <a href="http://www.shippable.com/" target="_blank"><img ref='img' src='images/company_logos/shippable.png'/></a>
+            </li>
+            <li>
+              <a href="http://www.wolfram.com/" target="_blank"><img ref='img' src='images/company_logos/wolfram.png'/></a>
+            </li>
+            <li>
+              <a href="https://comotion.uw.edu/" target="_blank"><img ref='img' src='images/company_logos/comotion.svg'/></a>
+            </li>
+            <li>
+              <a href="https://www.waopportunityscholarship.org/" target="_blank"><img ref='img' src='images/company_logos/wsos.png'/></a>
+            </li>
+            <li>
+              <a href="https://www.tune.com/" target="_blank"><img ref='img' src='images/company_logos/tune.png'/></a>
+            </li>
+          </ul>
+          <h2 className='section title'>Partners</h2>
+          <ul className='partners'>
+            <li>
+              <a id="mlh-trust-badge" href="https://mlh.io/?utm_campaign=Trust%20Badge" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/f2015.png" alt="MLH Official - Fall 2015" style={{
+      width: "160px"
+      }}/></a>
+            </li>
+          </ul>*/
+
+        ), 
 
         React.createElement("div", {className: "bubbles"}, 
           React.createElement(Bubble, {origin: bubbleOrigin}), 
