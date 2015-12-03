@@ -22369,7 +22369,9 @@ module.exports = React.createClass({displayName: "exports",
             React.createElement("h5", {className: "title"}, "Links"), 
             React.createElement("ul", {className: "links-list"}, 
               React.createElement("li", null, 
-                React.createElement("a", {href: "https://ld34sea.herokuapp.com/"}, "Seattle LudumDares 34")
+                React.createElement("a", {href: "https://ld34sea.herokuapp.com/"}, 
+                  "Seattle LudumDares 34"
+                )
               ), 
               React.createElement("li", null, 
                 React.createElement("a", {href: "/code-of-conduct.pdf"}, "Code of Conduct")
@@ -22387,9 +22389,15 @@ module.exports = React.createClass({displayName: "exports",
         React.createElement("div", {className: "sub footer"}, 
           React.createElement("div", {className: "love"}, "Made with", 
             React.createElement("span", {className: "heart"}, "❤"), 
-            "in Seattle"), 
-          React.createElement("p", {className: "TOS"}, "DubHacks is a student event. Our sponsors are sponsors of the event and not of the University of Washington.", React.createElement("br", null), "There is no implied endorsement of these companies by the University."), 
-          React.createElement("p", {className: "TOS"}, "IBM and the IBM logo are trademarks of International Business Machines Corp., registered in many jurisdictions worldwide")
+            "in Seattle")
+
+          /*<p className='TOS'>
+            DubHacks is a student event. Our sponsors are sponsors of the event and not of the University of Washington.<br/>There is no implied endorsement of these companies by the University.
+          </p>
+          <p className='TOS'>
+            IBM and the IBM logo are trademarks of International Business Machines Corp., registered in many jurisdictions worldwide
+          </p>*/
+
         )
       )
     );
@@ -22425,14 +22433,19 @@ module.exports = React.createClass({displayName: "exports",
             React.createElement("li", {onClick: this.scrollToSection('sponsor')}, React.createElement(Button, {content: "Sponsors"}))
           )
         ), 
+        /*
+          <ul className='social-buttons'>
+          <li>
+
+          </li>
+        </ul>*/
         React.createElement("ul", {className: "social-buttons"}, 
-
-          React.createElement("li", null, 
-            React.createElement("a", {href: "https://www.eventbrite.com/e/ludumdare34-seattle-hackathon-tickets-19650967573", target: "_blank"}, 
-              React.createElement(Button, {icon: "eventbrite"})
-            )
+          React.createElement("form", {action: "https://www.paypal.com/cgi-bin/webscr", method: "post", target: "_top"}, 
+            React.createElement("input", {type: "hidden", name: "cmd", value: "_s-xclick"}), 
+            React.createElement("input", {type: "hidden", name: "hosted_button_id", value: "MHTXWYCQGGWY6"}), 
+            React.createElement("input", {type: "image", src: "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif", border: "0", name: "submit", alt: "PayPal - The safer, easier way to pay online!"}), 
+            React.createElement("img", {alt: "", border: "0", src: "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", width: "1", height: "1"})
           )
-
         )
       )
     );
@@ -22483,98 +22496,106 @@ module.exports = React.createClass({displayName: "exports",
   getDefaultProps: function() {
     return {
       eventsByDay: {
-        1: [{
-          number: 5,
-          period: 'pm',
-          title: 'Mingle-ing'
-        }, {
-          number: 6,
-          period: 'pm',
-          title: 'Theme announced'
-        }, {
-          number: 6,
-          period: '15',
-          title: 'Dinner!'
-        }, {
-          number: 6,
-          period: '30',
-          title: 'Keynotes'
-        }, {
-          number: 6,
-          period: '45',
-          title: 'Team Forming'
-        }, {
-          number: 7,
-          period: 'pm',
-          title: 'Jam Starts'
-        }],
-        2: [{
-          number: 11,
-          period: 'am',
-          title: 'Lunch'
-        }, {
-          number: 6,
-          period: 'pm',
-          title: 'Dinner'
-        }],
-        3: [{
-          number: 11,
-          period: 'am',
-          title: 'Lunch'
-        }, {
-          number: 5,
-          period: 'pm',
-          title: 'Dinner'
-        }, {
-          number: 6,
-          period: 'pm',
-          title: 'Singler Pens Down!'
-        }, {
-          number: 7,
-          period: 'pm',
-          title: 'LudumDares Upload Deadlines'
-        },{
-          number: 7,
-          period: '10',
-          title: 'Single Show Off'
-        }, {
-          number: 8,
-          period: 'pm',
-          title: 'Single Prizes'
-        }],
-        4: [{
-          number: 11,
-          period: 'am',
-          title: 'Lunch'
-        }, {
-          number: 5,
-          period: 'pm',
-          title: 'Dinner'
-        }, {
-          number: 6,
-          period: 'pm',
-          title: 'Pens Down!'
-        }, {
-          number: 7,
-          period: 'pm',
-          title: 'LudumDares Upload Deadlines'
-        },{
-          number: 7,
-          period: '10',
-          title: 'Jam Show Off'
-        }, {
-          number: 8,
-          period: 'pm',
-          title: 'Judge and Prizes'
-        },{
-          number: 8,
-          period: '30',
-          title: 'Closing Ceremony / Clean Up'
-        }, {
-          number: 9,
-          period: 'pm',
-          title: 'Home Coming'
-        }]
+        1: [
+          {
+            number: 5,
+            period: 'pm',
+            title: 'Mingle-ing'
+          }, {
+            number: 6,
+            period: 'pm',
+            title: 'Theme announced'
+          }, {
+            number: 6,
+            period: '15',
+            title: 'Dinner!'
+          }, {
+            number: 6,
+            period: '30',
+            title: 'Keynotes'
+          }, {
+            number: 6,
+            period: '45',
+            title: 'Team Forming'
+          }, {
+            number: 7,
+            period: 'pm',
+            title: 'Jam Starts'
+          }
+        ],
+        2 : [
+          {
+            number: 11,
+            period: 'am',
+            title: 'Lunch'
+          }, {
+            number: 6,
+            period: 'pm',
+            title: 'Dinner'
+          }
+        ],
+        3 : [
+          {
+            number: 11,
+            period: 'am',
+            title: 'Lunch'
+          }, {
+            number: 5,
+            period: 'pm',
+            title: 'Dinner'
+          }, {
+            number: 6,
+            period: 'pm',
+            title: 'Singler Pens Down!'
+          }, {
+            number: 7,
+            period: 'pm',
+            title: 'LudumDares Upload Deadlines'
+          }, {
+            number: 7,
+            period: '10',
+            title: 'Single Show Off'
+          }, {
+            number: 8,
+            period: 'pm',
+            title: 'Single Prizes'
+          }
+        ],
+        4 : [
+          {
+            number: 11,
+            period: 'am',
+            title: 'Lunch'
+          }, {
+            number: 5,
+            period: 'pm',
+            title: 'Dinner'
+          }, {
+            number: 6,
+            period: 'pm',
+            title: 'Pens Down!'
+          }, {
+            number: 7,
+            period: 'pm',
+            title: 'LudumDares Upload Deadlines'
+          }, {
+            number: 7,
+            period: '10',
+            title: 'Jam Show Off'
+          }, {
+            number: 8,
+            period: 'pm',
+            title: 'Judge and Prizes'
+          }, {
+            number: 8,
+            period: '30',
+            title: 'Closing Ceremony / Clean Up'
+          }, {
+            number: 9,
+            period: 'pm',
+            title: 'Home Coming'
+          }
+        ]
       }
     };
   },
@@ -22600,9 +22621,10 @@ module.exports = React.createClass({displayName: "exports",
       var events = self.props.eventsByDay[dayNumber];
       return (
         React.createElement("ul", {className: "events"}, 
-          events.map(function(eventData) {
-            return getEvent(eventData);
-          })
+          events
+            .map(function(eventData) {
+              return getEvent(eventData);
+            })
         )
       );
     };
@@ -22612,19 +22634,23 @@ module.exports = React.createClass({displayName: "exports",
         React.createElement("h2", {className: "section title"}, "Schedule"), 
         React.createElement("ul", {className: "days"}, 
           React.createElement("li", {className: "day"}, 
-            React.createElement("h3", {className: "day-title"}, " Saturday December 11th"), 
+            React.createElement("h3", {className: "day-title"}, 
+              "Friday December 11th"), 
             getEvents(1)
           ), 
           React.createElement("li", {className: "day"}, 
-            React.createElement("h3", {className: "day-title"}, " Sunday December 12th"), 
+            React.createElement("h3", {className: "day-title"}, 
+              "Saturday December 12th"), 
             getEvents(2)
           ), 
           React.createElement("li", {className: "day"}, 
-            React.createElement("h3", {className: "day-title"}, " Monday December 13th"), 
+            React.createElement("h3", {className: "day-title"}, 
+              "Sunday December 13th"), 
             getEvents(3)
           ), 
           React.createElement("li", {className: "day"}, 
-            React.createElement("h3", {className: "day-title"}, " Monday December 13th"), 
+            React.createElement("h3", {className: "day-title"}, 
+              "Monday December 14th"), 
             getEvents(4)
           )
         ), 
@@ -22657,13 +22683,31 @@ module.exports = React.createClass({displayName: "exports",
 
     return (
       React.createElement("section", {className: time}, 
+
         React.createElement("img", {className: "skyline", src: "images/skyline.svg"}), 
         React.createElement("div", {className: "center"}, 
-          React.createElement("img", {className: "amz", src: "images/amazon.png"}), 
+          React.createElement("a", {href: "https://www.amazon.com/", target: "_blank"}, 
+            React.createElement("img", {className: "amz", src: "images/amazon.png"})
+          ), 
           React.createElement("h4", null, "presents"), 
-          React.createElement("img", {className: "logo", src: "images/ld-logo.png"}), 
-          React.createElement("h3", {className: "subtitle date"}, "December 11-13, 2015"), 
-          React.createElement("h4", {className: "subtitle location"}, "Surf Incubator, Seattle")
+          React.createElement("a", {href: "http://ludumdare.com/compo/", target: "_blank"}, 
+            React.createElement("img", {className: "logo", src: "images/ld-logo.png"})
+          ), 
+          React.createElement("h3", {className: "subtitle date"}, "Dec 11-14, 2015"), 
+
+          React.createElement("h4", {className: "subtitle location"}, 
+            React.createElement("a", {href: "http://www.surfincubator.com/", target: "_blank"}, 
+              "Surf Incubator, Seattle"
+            )
+          ), 
+
+          React.createElement("a", {href: "https://www.eventbrite.com/e/ludumdare34-seattle-hackathon-tickets-19650967573", target: "_blank"}, 
+            React.createElement("button", {className: "sign-up"}, 
+                React.createElement(Button, {icon: "eventbrite"}), " |" + ' ' +
+                "Sign up here"
+            )
+          )
+
         ), 
 
         React.createElement("ul", {className: "clouds"}, 

@@ -15,13 +15,31 @@ module.exports = React.createClass({
 
     return (
       <section className={time}>
+
         <img className='skyline' src='images/skyline.svg'/>
         <div className='center'>
-          <img className='amz' src='images/amazon.png'/>
+          <a href="https://www.amazon.com/" target='_blank'>
+            <img className='amz' src='images/amazon.png'/>
+          </a>
           <h4>presents</h4>
-          <img className='logo' src='images/ld-logo.png'/>
-          <h3 className='subtitle date'>December 11-13, 2015</h3>
-          <h4 className='subtitle location'>Surf Incubator, Seattle</h4>
+          <a href="http://ludumdare.com/compo/" target='_blank'>
+            <img className='logo' src='images/ld-logo.png'/>
+          </a>
+          <h3 className='subtitle date'>Dec 11-14, 2015</h3>
+
+          <h4 className='subtitle location'>
+            <a href="http://www.surfincubator.com/" target='_blank'>
+              Surf Incubator, Seattle
+            </a>
+          </h4>
+
+          <a href='https://www.eventbrite.com/e/ludumdare34-seattle-hackathon-tickets-19650967573' target='_blank'>
+            <button className='sign-up'>
+                <Button icon='eventbrite'/> |
+                Sign up here
+            </button>
+          </a>
+
         </div>
 
         <ul className='clouds'>

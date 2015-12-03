@@ -28,7 +28,9 @@ module.exports = React.createClass({
             <h5 className='title'>Links</h5>
             <ul className='links-list'>
               <li>
-                <a href='https://ld34sea.herokuapp.com/'>Seattle LudumDares 34</a>
+                <a href='https://ld34sea.herokuapp.com/'>
+                  Seattle LudumDares 34
+                </a>
               </li>
               <li>
                 <a href='/code-of-conduct.pdf'>Code of Conduct</a>
@@ -47,8 +49,14 @@ module.exports = React.createClass({
           <div className='love'>Made with
             <span className='heart'>❤</span>
             in Seattle</div>
-          <p className='TOS'>DubHacks is a student event. Our sponsors are sponsors of the event and not of the University of Washington.<br/>There is no implied endorsement of these companies by the University.</p>
-          <p className='TOS'>IBM and the IBM logo are trademarks of International Business Machines Corp., registered in many jurisdictions worldwide</p>
+
+          {/*<p className='TOS'>
+            DubHacks is a student event. Our sponsors are sponsors of the event and not of the University of Washington.<br/>There is no implied endorsement of these companies by the University.
+          </p>
+          <p className='TOS'>
+            IBM and the IBM logo are trademarks of International Business Machines Corp., registered in many jurisdictions worldwide
+          </p>*/}
+
         </div>
       </section>
     );
