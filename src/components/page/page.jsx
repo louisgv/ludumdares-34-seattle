@@ -11,13 +11,13 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div className='Page'>
-        <HeaderSection />
-        <SplashSection />
-        <DescriptionSection />
-        <ScheduleSection />
-        <FAQSection />
-        <SponsorSection />
-        <FooterSection />
+        <HeaderSection/>
+        <SplashSection/>
+        <DescriptionSection/>
+        <ScheduleSection/>
+        <FAQSection/>
+        <SponsorSection/>
+        <FooterSection/>
       </div>
     );
   }

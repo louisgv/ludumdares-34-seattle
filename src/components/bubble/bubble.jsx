@@ -4,11 +4,13 @@ var raf = require('raf');
 module.exports = React.createClass({
   propTypes: {
     // The start position of the bubble
-    origin: React.PropTypes.shape({
-      // Assume percentages
-      bottom: React.PropTypes.string,
-      right: React.PropTypes.string
-    })
+    origin: React
+      .PropTypes
+      .shape({
+        // Assume percentages
+        bottom: React.PropTypes.string,
+        right: React.PropTypes.string
+      })
   },
 
   // Private props
@@ -63,9 +65,7 @@ module.exports = React.createClass({
       self._resetVy();
       self._resetMaxBottom();
       raf(function tick(newtime) {
-        if (!self._stop) {
-          raf(tick);
-        }
+        if (!self._stop) {raf(tick);}
 
         // Animate
         // Reset if necessary
@@ -93,7 +93,7 @@ module.exports = React.createClass({
 
   render: function() {
     return (
-      <img ref='img' className='Bubble' src='images/bubble.svg' />
+      <img ref='img' className='Bubble' src='images/bubble.svg'/>
     );
   }
 });

@@ -679,7 +679,7 @@ body {
 }
 .ScheduleSection .days .day {
   display: inline-block;
-  width: 50%;
+  width: 30.6%;
   padding: 0 10%;
   margin-top: 20px;
   vertical-align: top;
@@ -1100,6 +1100,10 @@ body {
   opacity: 0.4;
   position: absolute;
   margin-top: 60%;
+}
+.SponsorSection .tiers {
+  visibility: hidden;
+  height: 100px;
 }
 .SponsorSection .tiers img {
   width: 100%;

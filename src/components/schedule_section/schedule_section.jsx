@@ -54,7 +54,32 @@ module.exports = React.createClass({
           number: 9,
           period: 'pm',
           title: 'Go Home'
-        }]
+        }],
+        3: [{
+          number: 8,
+          period: 'am',
+          title: 'Breakfast'
+        }, {
+          number: 12,
+          period: 'pm',
+          title: 'Lunch'
+        }, {
+          number: 5,
+          period: 'pm',
+          title: 'Submit Your Hack!'
+        }, {
+          number: 6,
+          period: 'pm',
+          title: 'Judging and Dinner'
+        }, {
+          number: 8,
+          period: 'pm',
+          title: 'Closing Ceremony'
+        }, {
+          number: 9,
+          period: 'pm',
+          title: 'Go Home'
+        }],
       }
     };
   },
@@ -92,12 +117,16 @@ module.exports = React.createClass({
         <h2 className='section title'>Schedule</h2>
         <ul className='days'>
           <li className='day'>
-            <h3 className='day-title'>October 17th</h3>
+            <h3 className='day-title'> Saturday December 11th</h3>
             {getEvents(1)}
           </li>
           <li className='day'>
-            <h3 className='day-title'>October 18th</h3>
+            <h3 className='day-title'> Sunday December 12th</h3>
             {getEvents(2)}
+          </li>
+          <li className='day'>
+            <h3 className='day-title'> Monday December 13th</h3>
+            {getEvents(3)}
           </li>
         </ul>
         <Boat />

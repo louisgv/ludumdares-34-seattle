@@ -22112,11 +22112,13 @@ var raf = require('raf');
 module.exports = React.createClass({displayName: "exports",
   propTypes: {
     // The start position of the bubble
-    origin: React.PropTypes.shape({
-      // Assume percentages
-      bottom: React.PropTypes.string,
-      right: React.PropTypes.string
-    })
+    origin: React
+      .PropTypes
+      .shape({
+        // Assume percentages
+        bottom: React.PropTypes.string,
+        right: React.PropTypes.string
+      })
   },
 
   // Private props
@@ -22171,9 +22173,7 @@ module.exports = React.createClass({displayName: "exports",
       self._resetVy();
       self._resetMaxBottom();
       raf(function tick(newtime) {
-        if (!self._stop) {
-          raf(tick);
-        }
+        if (!self._stop) {raf(tick);}
 
         // Animate
         // Reset if necessary
@@ -22253,8 +22253,12 @@ module.exports = React.createClass({displayName: "exports",
     return (
       React.createElement("section", {className: "DescriptionSection page-section"}, 
         React.createElement("div", {className: "text"}, 
-          React.createElement("h2", {className: "section title"}, "Educate Yourself"), 
-          React.createElement("p", {className: "description"}, "DubHacks is the ", React.createElement("strong", null, "largest collegiate hackathon"), " in the Pacific Northwest. This fall, over 600 top college hackers will gather at the ", React.createElement("strong", null, "University of Washington"), " to build the next generation of innovative software and hardware hacks.")
+          React.createElement("h2", {className: "section title"}, "Extra EXP"), 
+          React.createElement("p", {className: "description"}, "LudumDares is the", 
+            React.createElement("strong", null, "largest indie gamejam"), 
+            "recoganized globally. This winter, over 100 top game designers will gather at the", 
+            React.createElement("strong", null, "Seattle Surf Incubator"), 
+            "to networking and make awesome games.")
         ), 
         React.createElement("img", {className: "trees", src: "images/trees.svg"})
       )
@@ -22400,12 +22404,12 @@ module.exports = React.createClass({displayName: "exports",
   },
 
   render: function() {
-// <a target='_blank' href='/apply'><li className='register-button'><Button content='Apply!' flavor={Button.flavors.solid} /></li></a>
-// <a target='_blank' href='/mentor'><li className='register-button'><Button content='Mentor!' flavor={Button.flavors.solid} /></li></a>
-// <a target='_blank' href='/volunteer'><li className='register-button'><Button content='Volunteer!' flavor={Button.flavors.solid} /></li></a>
+    // <a target='_blank' href='/apply'><li className='register-button'><Button content='Apply!' flavor={Button.flavors.solid} /></li></a>
+    // <a target='_blank' href='/mentor'><li className='register-button'><Button content='Mentor!' flavor={Button.flavors.solid} /></li></a>
+    // <a target='_blank' href='/volunteer'><li className='register-button'><Button content='Volunteer!' flavor={Button.flavors.solid} /></li></a>
     return (
-      React.createElement("section", {className: "HeaderSection page-section"}, 
-        React.createElement("img", {className: "logo", src: "images/logo-small.svg"}), 
+      React.createElement("section", {className: "HeaderSection page-section", id: "top"}, 
+        React.createElement("img", {className: "logo", src: "images/logo-small.svg", onClick: this.scrollToSection('top')}), 
         React.createElement("nav", {className: "nav"}, 
           React.createElement("ul", {className: "nav-buttons"}, 
             React.createElement("li", {onClick: this.scrollToSection('schedule')}, React.createElement(Button, {content: "Schedule"})), 
@@ -22414,9 +22418,15 @@ module.exports = React.createClass({displayName: "exports",
           )
         ), 
         React.createElement("ul", {className: "social-buttons"}, 
-          React.createElement("li", null, React.createElement("a", {href: "mailto:info@dubhacks.co"}, React.createElement(Button, {icon: "mail"}))), 
-          React.createElement("li", null, React.createElement("a", {href: "http://www.facebook.com/uwhacks"}, React.createElement(Button, {icon: "facebook"}))), 
-          React.createElement("li", null, React.createElement("a", {href: "http://www.twitter.com/dubhacks"}, React.createElement(Button, {icon: "twitter"})))
+          React.createElement("li", null, 
+            React.createElement("a", {href: "mailto:info@dubhacks.co"}, React.createElement(Button, {icon: "mail"}))
+          ), 
+          React.createElement("li", null, 
+            React.createElement("a", {href: "http://www.facebook.com/uwhacks"}, React.createElement(Button, {icon: "facebook"}))
+          ), 
+          React.createElement("li", null, 
+            React.createElement("a", {href: "http://www.twitter.com/dubhacks"}, React.createElement(Button, {icon: "twitter"}))
+          )
         )
       )
     );
@@ -22512,7 +22522,32 @@ module.exports = React.createClass({displayName: "exports",
           number: 9,
           period: 'pm',
           title: 'Go Home'
-        }]
+        }],
+        3: [{
+          number: 8,
+          period: 'am',
+          title: 'Breakfast'
+        }, {
+          number: 12,
+          period: 'pm',
+          title: 'Lunch'
+        }, {
+          number: 5,
+          period: 'pm',
+          title: 'Submit Your Hack!'
+        }, {
+          number: 6,
+          period: 'pm',
+          title: 'Judging and Dinner'
+        }, {
+          number: 8,
+          period: 'pm',
+          title: 'Closing Ceremony'
+        }, {
+          number: 9,
+          period: 'pm',
+          title: 'Go Home'
+        }],
       }
     };
   },
@@ -22550,12 +22585,16 @@ module.exports = React.createClass({displayName: "exports",
         React.createElement("h2", {className: "section title"}, "Schedule"), 
         React.createElement("ul", {className: "days"}, 
           React.createElement("li", {className: "day"}, 
-            React.createElement("h3", {className: "day-title"}, "October 17th"), 
+            React.createElement("h3", {className: "day-title"}, " Saturday December 11th"), 
             getEvents(1)
           ), 
           React.createElement("li", {className: "day"}, 
-            React.createElement("h3", {className: "day-title"}, "October 18th"), 
+            React.createElement("h3", {className: "day-title"}, " Sunday December 12th"), 
             getEvents(2)
+          ), 
+          React.createElement("li", {className: "day"}, 
+            React.createElement("h3", {className: "day-title"}, " Monday December 13th"), 
+            getEvents(3)
           )
         ), 
         React.createElement(Boat, null), 
@@ -22576,23 +22615,24 @@ var Button = require('../button/button.jsx');
 module.exports = React.createClass({displayName: "exports",
   render: function() {
     var d = new Date();
-  	var n = d.getHours();
+    var n = d.getHours();
     var time = "SplashSection page-section";
-  	if (n >= 20 || n < 6)
-  	  time += " night";
-  	else if (n > 16 && n < 20)
-  	  time += " evening";
-  	else
-  	  time += " morning";
+    if (n >= 20 || n < 6)
+      time += " night";
+    else if (n > 16 && n < 20)
+      time += " evening";
+    else
+      time += " morning";
 
     return (
       React.createElement("section", {className: time}, 
         React.createElement("img", {className: "skyline", src: "images/skyline.svg"}), 
         React.createElement("div", {className: "center"}, 
           React.createElement("img", {className: "logo", src: "images/logo.svg"}), 
-          React.createElement("h3", {className: "subtitle date"}, "October 17-18, 2015"), 
-          React.createElement("h4", {className: "subtitle location"}, "UW, Seattle")
+          React.createElement("h3", {className: "subtitle date"}, "December 11-13, 2015"), 
+          React.createElement("h4", {className: "subtitle location"}, "Surf Incubator, Seattle")
         ), 
+
         React.createElement("ul", {className: "clouds"}, 
           React.createElement("img", {className: "cloud form1", src: "images/cloud1.svg"}), 
           React.createElement("img", {className: "cloud form2", src: "images/cloud2.svg"}), 
@@ -22611,7 +22651,7 @@ module.exports = React.createClass({displayName: "exports",
 },{"../button/button.jsx":"/home/lab/pro/gig/ludumdares-34-seattle/src/components/button/button.jsx","_process":"/home/lab/pro/gig/ludumdares-34-seattle/node_modules/browserify/node_modules/process/browser.js","buffer":"/home/lab/pro/gig/ludumdares-34-seattle/node_modules/browserify/node_modules/buffer/index.js","react":"/home/lab/pro/gig/ludumdares-34-seattle/node_modules/react/react.js"}],"/home/lab/pro/gig/ludumdares-34-seattle/src/components/sponsor_section/sponsor_section.jsx":[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 var React = require('react');
- var Bubble = require('../bubble/bubble.jsx');
+var Bubble = require('../bubble/bubble.jsx');
 
 module.exports = React.createClass({displayName: "exports",
   render: function() {
@@ -22624,49 +22664,113 @@ module.exports = React.createClass({displayName: "exports",
       React.createElement("section", {className: "SponsorSection page-section", id: "sponsor"}, 
         React.createElement("img", {className: "squid", src: "images/squid.svg"}), 
         React.createElement("h2", {className: "section title"}, "Sponsors"), 
-        React.createElement("div", {className: "tiers"}, 
+
+      React.createElement("div", {className: "tiers"}, 
           React.createElement("ul", {className: "platinum"}, 
-            React.createElement("li", null, React.createElement("a", {href: "http://microsoft.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/microsoft.png"})))
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://microsoft.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/microsoft.png"}))
+            )
           ), 
           React.createElement("ul", {className: "gold"}, 
-            React.createElement("li", null, React.createElement("a", {href: "https://developers.google.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/Google_2015_logo.svg"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://a16z.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/a16z.svg"}))), 
-            React.createElement("li", {className: "extraSmall"}, React.createElement("a", {href: "http://developers.facebook.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/facebook.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://qumulo.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/qumulo.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://isilon.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/isilon.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://disneytechjobs.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/disney.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://ibm.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/btnIBM.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://concur.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/logos_concur_horizontal.png"})))
+            React.createElement("li", null, 
+              React.createElement("a", {href: "https://developers.google.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/Google_2015_logo.svg"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://a16z.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/a16z.svg"}))
+            ), 
+            React.createElement("li", {className: "extraSmall"}, 
+              React.createElement("a", {href: "http://developers.facebook.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/facebook.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://qumulo.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/qumulo.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://isilon.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/isilon.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://disneytechjobs.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/disney.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://ibm.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/btnIBM.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://concur.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/logos_concur_horizontal.png"}))
+            )
           ), 
           React.createElement("ul", {className: "silver"}, 
-            React.createElement("li", null, React.createElement("a", {href: "http://www.taser.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/taser.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://www.amazon.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/amazon.png"}))), 
-            React.createElement("li", {className: "extraSmall"}, React.createElement("a", {href: "http://www.ge.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/ge.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://zillow.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/ZillowLogo.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://venmo.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/venmo.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://libertymutual.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/libertymutual.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://www.clarifai.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/Clarifai.png"})))
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://www.taser.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/taser.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://www.amazon.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/amazon.png"}))
+            ), 
+            React.createElement("li", {className: "extraSmall"}, 
+              React.createElement("a", {href: "http://www.ge.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/ge.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://zillow.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/ZillowLogo.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://venmo.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/venmo.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://libertymutual.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/libertymutual.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://www.clarifai.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/Clarifai.png"}))
+            )
           ), 
           React.createElement("ul", {className: "bronze"}, 
-            React.createElement("li", null, React.createElement("a", {href: "http://epic.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/epic_logo.png"}))), 
-            React.createElement("li", {className: "extraLarge"}, React.createElement("a", {href: "http://extrahop.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/extrahop.png"}))), 
-            React.createElement("li", {className: "extraLarge"}, React.createElement("a", {href: "http://algorithmia.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/algorithmia.png"}))), 
-            React.createElement("li", {className: "extraSmall"}, React.createElement("a", {href: "http://www.go.co/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/co2.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "https://www.soylent.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/soylent.svg"}))), 
-            React.createElement("li", {className: "extraSmall"}, React.createElement("a", {href: "http://www.bonsaimediagroup.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/bonsai.gif"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://www.intel.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/intel.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "https://www.namecheap.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/namecheap.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://www.shippable.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/shippable.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "http://www.wolfram.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/wolfram.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "https://comotion.uw.edu/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/comotion.svg"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "https://www.waopportunityscholarship.org/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/wsos.png"}))), 
-            React.createElement("li", null, React.createElement("a", {href: "https://www.tune.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/tune.png"})))
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://epic.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/epic_logo.png"}))
+            ), 
+            React.createElement("li", {className: "extraLarge"}, 
+              React.createElement("a", {href: "http://extrahop.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/extrahop.png"}))
+            ), 
+            React.createElement("li", {className: "extraLarge"}, 
+              React.createElement("a", {href: "http://algorithmia.com", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/algorithmia.png"}))
+            ), 
+            React.createElement("li", {className: "extraSmall"}, 
+              React.createElement("a", {href: "http://www.go.co/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/co2.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "https://www.soylent.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/soylent.svg"}))
+            ), 
+            React.createElement("li", {className: "extraSmall"}, 
+              React.createElement("a", {href: "http://www.bonsaimediagroup.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/bonsai.gif"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://www.intel.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/intel.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "https://www.namecheap.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/namecheap.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://www.shippable.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/shippable.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "http://www.wolfram.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/wolfram.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "https://comotion.uw.edu/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/comotion.svg"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "https://www.waopportunityscholarship.org/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/wsos.png"}))
+            ), 
+            React.createElement("li", null, 
+              React.createElement("a", {href: "https://www.tune.com/", target: "_blank"}, React.createElement("img", {ref: "img", src: "images/company_logos/tune.png"}))
+            )
           ), 
           React.createElement("h2", {className: "section title"}, "Partners"), 
           React.createElement("ul", {className: "partners"}, 
-            React.createElement("li", null, React.createElement("a", {id: "mlh-trust-badge", href: "https://mlh.io/?utm_campaign=Trust%20Badge", target: "_blank"}, React.createElement("img", {src: "https://s3.amazonaws.com/logged-assets/trust-badge/f2015.png", alt: "MLH Official - Fall 2015", style: { width: "160px"}})))
+            React.createElement("li", null, 
+              React.createElement("a", {id: "mlh-trust-badge", href: "https://mlh.io/?utm_campaign=Trust%20Badge", target: "_blank"}, React.createElement("img", {src: "https://s3.amazonaws.com/logged-assets/trust-badge/f2015.png", alt: "MLH Official - Fall 2015", style: {
+      width: "160px"
+      }}))
+            )
           )
-        ), 
+      ), 
+
         React.createElement("div", {className: "bubbles"}, 
           React.createElement(Bubble, {origin: bubbleOrigin}), 
           React.createElement(Bubble, {origin: bubbleOrigin}), 
