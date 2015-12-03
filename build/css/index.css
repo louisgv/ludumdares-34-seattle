@@ -191,6 +191,9 @@ body {
   -webkit-transition: background 200ms, opacity 200ms;
           transition: background 200ms, opacity 200ms;
 }
+.Button.eventbrite {
+  background: #ff8000;
+}
 .Button.solid {
   color: #fff !important;
   background: -webkit-linear-gradient(#2cafe6, #00b2e2);

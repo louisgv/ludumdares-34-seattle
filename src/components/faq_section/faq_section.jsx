@@ -8,7 +8,7 @@ module.exports = React.createClass({
         <div className='faqs'>
           <ul className='faq'>
             <li className='qa'>
-              <h4 className='question'>What is DubHacks?</h4>
+              <h4 className='question'>What is LudumDares?</h4>
               <p>DubHacks is the largest collegiate hackathon in the Pacific Northwest. The first of its kind in the Pacific Northwest, student developers and designers gather at the University of Washington in Seattle campus to form teams and build projects with the goal of creating solutions to real-world problems and learning new technologies. This is the second-ever DubHacks event.</p>
             </li>
             <li className='qa'>

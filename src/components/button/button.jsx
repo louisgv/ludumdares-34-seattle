@@ -20,9 +20,9 @@ module.exports = React.createClass({
 
   render: function() {
     return (
-      <div className={'Button ' + (this.props.flavor ? this.props.flavor : '')}>
+      <div className={'Button ' + (this.props.flavor ? this.props.flavor : '') + this.props.icon}>
         {this.props.icon ?
-          <img className='icon' src={'./images/icons/' + this.props.icon + '.svg'} />
+          <img className={'icon '} src={'./images/icons/' + this.props.icon + '.svg'} />
         : ''}
         {this.props.content ? this.props.content : ''}
       </div>

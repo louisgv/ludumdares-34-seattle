@@ -15,7 +15,7 @@ module.exports = React.createClass({
     // <a target='_blank' href='/volunteer'><li className='register-button'><Button content='Volunteer!' flavor={Button.flavors.solid} /></li></a>
     return (
       <section className='HeaderSection page-section' id='top'>
-        <img className='logo' src='images/logo-small.svg' onClick={this.scrollToSection('top')}/>
+        <img className='logo' src='images/ld-logo.png' onClick={this.scrollToSection('top')}/>
         <nav className='nav'>
           <ul className='nav-buttons'>
             <li onClick={this.scrollToSection('schedule')}><Button content='Schedule'/></li>
@@ -24,15 +24,13 @@ module.exports = React.createClass({
           </ul>
         </nav>
         <ul className='social-buttons'>
+
           <li>
-            <a href='mailto:info@dubhacks.co'><Button icon='mail'/></a>
+            <a href='https://www.eventbrite.com/e/ludumdare34-seattle-hackathon-tickets-19650967573' target='_blank'>
+              <Button icon='eventbrite'/>
+            </a>
           </li>
-          <li>
-            <a href='http://www.facebook.com/uwhacks'><Button icon='facebook'/></a>
-          </li>
-          <li>
-            <a href='http://www.twitter.com/dubhacks'><Button icon='twitter'/></a>
-          </li>
+
         </ul>
       </section>
     );
