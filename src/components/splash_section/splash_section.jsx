@@ -17,8 +17,8 @@ module.exports = React.createClass({
       <section className={time}>
         <img className='skyline' src='images/skyline.svg'/>
         <div className='center'>
-          <h1>Amazon.com</h1>
-          <h2>presents</h2>
+          <img className='amz' src='images/amazon.png'/>
+          <h4>presents</h4>
           <img className='logo' src='images/ld-logo.png'/>
           <h3 className='subtitle date'>December 11-13, 2015</h3>
           <h4 className='subtitle location'>Surf Incubator, Seattle</h4>

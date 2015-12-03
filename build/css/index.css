@@ -518,7 +518,7 @@ body {
 }
 .HeaderSection .logo {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 10px;
   width: 120px;
 }
@@ -826,6 +826,12 @@ body {
   margin-left: -160px;
   margin-top: -220px;
 }
+.SplashSection .center .amz {
+  width: 100%;
+  background: #cfcfce;
+  border-radius: 10px;
+  padding: 10px;
+}
 .SplashSection .center .logo {
   width: 100%;
   -webkit-animation: titleLogoShake 20s infinite;
@@ -885,12 +891,12 @@ body {
           animation: plane 60s linear infinite;
 }
 .morning {
-  background: -webkit-linear-gradient(#00b2e2, #2cafe6, #94dff0);
-  background: linear-gradient(#00b2e2, #2cafe6, #94dff0);
-}
-.evening {
   background: -webkit-linear-gradient(#eb1e7a, #ef5352);
   background: linear-gradient(#eb1e7a, #ef5352);
+}
+.evening {
+  background: -webkit-linear-gradient(#fd982f, #fddd38);
+  background: linear-gradient(#fd982f, #fddd38);
 }
 .night {
   background: url("/images/stardust.png");
