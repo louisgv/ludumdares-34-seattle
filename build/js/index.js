@@ -22686,10 +22686,12 @@ module.exports = React.createClass({displayName: "exports",
 
         React.createElement("img", {className: "skyline", src: "images/skyline.svg"}), 
         React.createElement("div", {className: "center"}, 
-          React.createElement("a", {href: "https://www.amazon.com/", target: "_blank"}, 
-            React.createElement("img", {className: "amz", src: "images/amazon.png"})
-          ), 
-          React.createElement("h4", null, "presents"), 
+          /*
+            <a href="https://www.amazon.com/" target='_blank'>
+              <img className='amz' src='images/amazon.png'/>
+            </a>
+            <h4>presents</h4>
+          */
           React.createElement("a", {href: "http://ludumdare.com/compo/", target: "_blank"}, 
             React.createElement("img", {className: "logo", src: "images/ld-logo.png"})
           ), 
@@ -22745,8 +22747,8 @@ module.exports = React.createClass({displayName: "exports",
         React.createElement("div", {className: "tiers"}, 
           React.createElement("ul", {className: "platinum"}, 
             React.createElement("li", null, 
-              React.createElement("a", {href: "http://www.amazon.com/", target: "_blank"}, 
-                React.createElement("img", {ref: "img", src: "images/company_logos/amazon-w.png"})
+              React.createElement("a", {href: "https://developer.amazon.com/appsandservices/", target: "_blank"}, 
+                React.createElement("img", {ref: "img", src: "images/amz-appstore.png"})
               )
             )
           )

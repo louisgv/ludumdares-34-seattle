@@ -825,6 +825,17 @@ body {
   top: 50%;
   margin-left: -160px;
   margin-top: -220px;
+  padding: 9% 0%;
+}
+@media all and (max-width: 1000px) {
+  .SplashSection .center {
+    padding: 0% 0%;
+  }
+}
+@media all and (max-width: 600px) {
+  .SplashSection .center {
+    padding: 27% 9%;
+  }
 }
 .SplashSection .center .amz {
   width: 100%;

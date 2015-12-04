@@ -55,6 +55,7 @@ planeSpeed = 60s
   height 100 vh
   color white
 
+
   .center
     font-family 'Unica One'
     text-align center
@@ -65,6 +66,14 @@ planeSpeed = 60s
     top 50%
     margin-left -(centerSize / 2)
     margin-top -(centerSize / 2) - 60px
+    padding 9% 0%
+
+    @media mediaTablet
+      padding 0% 0%
+
+    // 1 column
+    @media mediaPhone
+      padding 27% 9%
 
     .amz
       width 100%

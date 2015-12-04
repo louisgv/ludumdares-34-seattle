@@ -18,10 +18,12 @@ module.exports = React.createClass({
 
         <img className='skyline' src='images/skyline.svg'/>
         <div className='center'>
-          <a href="https://www.amazon.com/" target='_blank'>
-            <img className='amz' src='images/amazon.png'/>
-          </a>
-          <h4>presents</h4>
+          {/*
+            <a href="https://www.amazon.com/" target='_blank'>
+              <img className='amz' src='images/amazon.png'/>
+            </a>
+            <h4>presents</h4>
+          */}
           <a href="http://ludumdare.com/compo/" target='_blank'>
             <img className='logo' src='images/ld-logo.png'/>
           </a>

@@ -16,8 +16,8 @@ module.exports = React.createClass({
         <div className='tiers'>
           <ul className='platinum'>
             <li>
-              <a href="http://www.amazon.com/" target="_blank">
-                <img ref='img' src='images/company_logos/amazon-w.png'/>
+              <a href="https://developer.amazon.com/appsandservices/" target="_blank">
+                <img ref='img' src='images/amz-appstore.png'/>
               </a>
             </li>
           </ul>
