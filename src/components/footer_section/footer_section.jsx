@@ -7,18 +7,11 @@ module.exports = React.createClass({
           <div className='col organizers'>
             <h5 className='title'>Seattle LudumDares 34 Organizers</h5>
             <ul className='organizers-list'>
-              {/*
-                <a href='http://grant.cm / '><li>Grant Timmerman</li></a>
-                <a href='https://www.linkedin.com/in/skylerkidd'><li>Skyler Kidd</li></a>
-                <a href='http://mahirk.com/'><li>Mahir Kothary</li></a>
-                <a href='https://twitter.com/naomimusgrave'><li>Naomi Musgrave</li></a>
-                <a href='https://twitter.com/NavidAzodi'><li>Navid Azodi</li></a>
-                <a href='http://davidcoven.me'><li>David Coven</li></a>
-                <a href='http://anwell.me/'><li>Anwell Wang</li></a>
-                <a href='http://christopher.su/'><li>Christopher Su</li></a>
-                <a href='http://www.lucascolusso.com/'><li>Lucas Colusso</li></a>
-                <a href='http://www.linkedin.com/in/MaliaImayama'><li>Malia Imayama</li></a>
-                */}
+                <a href='https://www.facebook.com/aya.tanaka.71404'  target='_blank'><li>Kawan Wealth</li></a>
+                <a href='https://louisgv.github.io' target='_blank'><li>L.A.B</li></a>
+                <a href='
+                http://www.eviemakesgames.com/' target='_blank'><li>Evie Powell</li></a>
+
             </ul>
           </div>
           <div className='col logo'>

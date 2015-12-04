@@ -361,13 +361,14 @@ body {
 }
 .FooterSection .main.footer .col.logo .logo {
   width: 100%;
+  margin-top: 27px;
   max-width: 220px;
-  -webkit-transition: -webkit-transform 400ms;
-          transition: transform 400ms;
+  -webkit-transition: -webkit-transform 4s;
+          transition: transform 4s;
 }
 .FooterSection .main.footer .col.logo .logo:hover {
-  -webkit-animation: logoShake 2s;
-          animation: logoShake 2s;
+  -webkit-animation: logoShake 4s;
+          animation: logoShake 4s;
 }
 .FooterSection .main.footer .col.organizers .organizers-list {
   overflow: hidden;
