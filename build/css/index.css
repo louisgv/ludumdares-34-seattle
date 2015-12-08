@@ -1035,11 +1035,11 @@ body {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  80% {
+  45% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  95% {
+  90% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
@@ -1049,11 +1049,11 @@ body {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  80% {
+  45% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  95% {
+  90% {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
