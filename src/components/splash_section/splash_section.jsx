@@ -49,8 +49,8 @@ module.exports = React.createClass({
           <img className='cloud form2' src='images/cloud2.svg'/>
           <img className='cloud form3' src='images/cloud3.svg'/>
         </ul>
-        <ul className='planes'>
-          <img className='plane' src='images/plane.svg'/>
+        <ul className='quirks'>
+          <img className='pacman' src='images/pacman.gif'/>
         </ul>
       </section>
     );

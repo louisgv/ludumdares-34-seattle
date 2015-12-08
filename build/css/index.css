@@ -820,13 +820,13 @@ body {
 .SplashSection .center {
   font-family: 'Unica One';
   text-align: center;
-  height: 320px;
-  width: 320px;
+  height: 360px;
+  width: 360px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -160px;
-  margin-top: -220px;
+  margin-left: -180px;
+  margin-top: -240px;
   padding: 9% 0%;
 }
 @media all and (max-width: 1000px) {
@@ -883,35 +883,32 @@ body {
 .SplashSection .clouds .cloud.form1 {
   width: 150px;
   top: 25%;
-  -webkit-animation: cloud1 100s infinite;
-          animation: cloud1 100s infinite;
+  -webkit-animation: cloud1 90s infinite;
+          animation: cloud1 90s infinite;
 }
 .SplashSection .clouds .cloud.form2 {
   width: 100px;
   top: 50%;
-  -webkit-animation: cloud2 110.00000000000001s infinite;
-          animation: cloud2 110.00000000000001s infinite;
+  -webkit-animation: cloud2 99.00000000000001s infinite;
+          animation: cloud2 99.00000000000001s infinite;
 }
 .SplashSection .clouds .cloud.form3 {
   width: 100px;
   top: 75%;
-  -webkit-animation: cloud3 90s infinite;
-          animation: cloud3 90s infinite;
+  -webkit-animation: cloud3 81s infinite;
+          animation: cloud3 81s infinite;
 }
-.SplashSection .planes .plane {
+.SplashSection .quirks .pacman {
   position: absolute;
   width: 100px;
   left: -33%;
-  top: 70%;
-  -webkit-transform: rotate(-10deg);
-      -ms-transform: rotate(-10deg);
-          transform: rotate(-10deg);
-  -webkit-animation: plane 60s linear infinite;
-          animation: plane 60s linear infinite;
+  top: 81%;
+  -webkit-animation: pacman 45s linear infinite;
+          animation: pacman 45s linear infinite;
 }
 .morning {
-  background: -webkit-linear-gradient(#eb1e7a, #ef5352);
-  background: linear-gradient(#eb1e7a, #ef5352);
+  background: -webkit-linear-gradient(#2ecc71, #76ff7a);
+  background: linear-gradient(#2ecc71, #76ff7a);
 }
 .evening {
   background: -webkit-linear-gradient(#fd982f, #fddd38);
@@ -1004,27 +1001,23 @@ body {
     left: 15%;
   }
 }
-@-webkit-keyframes plane {
+@-webkit-keyframes pacman {
   10% {
-    left: -23%;
-    top: 70%;
+    left: -9%;
   }
   20% {
     left: 105%;
-    top: 40%;
   }
   20.0001% {
     left: -23%;
   }
 }
-@keyframes plane {
+@keyframes pacman {
   10% {
-    left: -23%;
-    top: 70%;
+    left: -9%;
   }
   20% {
     left: 105%;
-    top: 40%;
   }
   20.0001% {
     left: -23%;

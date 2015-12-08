@@ -22719,8 +22719,8 @@ module.exports = React.createClass({displayName: "exports",
           React.createElement("img", {className: "cloud form2", src: "images/cloud2.svg"}), 
           React.createElement("img", {className: "cloud form3", src: "images/cloud3.svg"})
         ), 
-        React.createElement("ul", {className: "planes"}, 
-          React.createElement("img", {className: "plane", src: "images/plane.svg"})
+        React.createElement("ul", {className: "quirks"}, 
+          React.createElement("img", {className: "pacman", src: "images/pacman.gif"})
         )
       )
     );

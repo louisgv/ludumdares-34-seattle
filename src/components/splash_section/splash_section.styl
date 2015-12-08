@@ -1,7 +1,7 @@
 @import '../../constants'
-centerSize = 320px
-cloudSpeed = 100s
-planeSpeed = 60s
+centerSize = 360px
+cloudSpeed = 90s
+pacmanSpeed = 45s
 
 @keyframes cloud1
   0%
@@ -33,13 +33,11 @@ planeSpeed = 60s
   100%
     left 15%
 
-@keyframes plane
+@keyframes pacman
   10%
-    left -23%
-    top 70%
+    left -9%
   20%
     left 105%
-    top 40%
   20.0001%
     left -23%
 
@@ -135,17 +133,17 @@ planeSpeed = 60s
         top 75%
         animation cloud3 cloudSpeed * 0.9 infinite
 
-  .planes
-    .plane
+  .quirks
+    .pacman
       position absolute
       width 100px
       left -33%
-      top 70%
-      transform rotate(-10deg)
-      animation plane planeSpeed linear infinite
+      top 81%
+      // transform rotate(-10deg)
+      animation pacman pacmanSpeed linear infinite
 
 .morning
-  background linear-gradient(colorPink, colorPinkLight)
+  background linear-gradient(colorGreen, colorGreenLight)
 
 .evening
   background linear-gradient(colorOrange, colorOrangeLight)
