@@ -560,6 +560,7 @@ body {
 .HeaderSection .social-buttons {
   float: right;
   display: inline-block;
+  height: 100%;
 }
 .HeaderSection .social-buttons li {
   display: inline-block;

@@ -22348,11 +22348,20 @@ module.exports = React.createClass({displayName: "exports",
           React.createElement("div", {className: "col organizers"}, 
             React.createElement("h5", {className: "title"}, "Seattle LudumDares 34 Organizers"), 
             React.createElement("ul", {className: "organizers-list"}, 
-                React.createElement("a", {href: "https://www.facebook.com/aya.tanaka.71404", target: "_blank"}, React.createElement("li", null, "Kawan Wealth")), 
-                React.createElement("a", {href: "https://louisgv.github.io", target: "_blank"}, React.createElement("li", null, "L.A.B")), 
-                React.createElement("a", {href: 
-                "http://www.eviemakesgames.com/", target: "_blank"}, React.createElement("li", null, "Evie Powell"))
-
+              React.createElement("a", {href: "https://www.facebook.com/aya.tanaka.71404", target: "_blank"}, 
+                React.createElement("li", null, "Kawan Wealth")
+              ), 
+              React.createElement("a", {href: "https://louisgv.github.io", target: "_blank"}, 
+                React.createElement("li", null, "L.A.B")
+              ), 
+              React.createElement("a", {href: 
+                "http://www.eviemakesgames.com/", target: "_blank"}, 
+                React.createElement("li", null, "Evie Powell")
+              ), 
+              React.createElement("a", {href: 
+                "http://constancechen.me/", target: "_blank"}, 
+                React.createElement("li", null, "Constance Chen")
+              )
             )
           ), 
           React.createElement("div", {className: "col logo"}, 
@@ -22433,9 +22442,9 @@ module.exports = React.createClass({displayName: "exports",
           </li>
         </ul>*/
         React.createElement("ul", {className: "social-buttons"}, 
-          React.createElement("form", {action: "https://www.paypal.com/cgi-bin/webscr", method: "post", target: "_top"}, 
+          React.createElement("form", {action: "https://www.paypal.com/cgi-bin/webscr", method: "post", target: "_blank"}, 
             React.createElement("input", {type: "hidden", name: "cmd", value: "_s-xclick"}), 
-            React.createElement("input", {type: "hidden", name: "hosted_button_id", value: "MHTXWYCQGGWY6"}), 
+            React.createElement("input", {type: "hidden", name: "hosted_button_id", value: "BQ9CVCWMHJHF4"}), 
             React.createElement("input", {type: "image", src: "https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif", border: "0", name: "submit", alt: "PayPal - The safer, easier way to pay online!"}), 
             React.createElement("img", {alt: "", border: "0", src: "https://www.paypalobjects.com/en_US/i/scr/pixel.gif", width: "1", height: "1"})
           )

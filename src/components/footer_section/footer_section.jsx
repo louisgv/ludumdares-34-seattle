@@ -7,11 +7,20 @@ module.exports = React.createClass({
           <div className='col organizers'>
             <h5 className='title'>Seattle LudumDares 34 Organizers</h5>
             <ul className='organizers-list'>
-                <a href='https://www.facebook.com/aya.tanaka.71404'  target='_blank'><li>Kawan Wealth</li></a>
-                <a href='https://louisgv.github.io' target='_blank'><li>L.A.B</li></a>
-                <a href='
-                http://www.eviemakesgames.com/' target='_blank'><li>Evie Powell</li></a>
-
+              <a href='https://www.facebook.com/aya.tanaka.71404' target='_blank'>
+                <li>Kawan Wealth</li>
+              </a>
+              <a href='https://louisgv.github.io' target='_blank'>
+                <li>L.A.B</li>
+              </a>
+              <a href='
+                http://www.eviemakesgames.com/' target='_blank'>
+                <li>Evie Powell</li>
+              </a>
+              <a href='
+                http://constancechen.me/' target='_blank'>
+                <li>Constance Chen</li>
+              </a>
             </ul>
           </div>
           <div className='col logo'>
