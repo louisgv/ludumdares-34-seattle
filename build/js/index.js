@@ -22277,57 +22277,92 @@ module.exports = React.createClass({displayName: "exports",
       React.createElement("section", {className: "FAQSection page-section", id: "faq"}, 
         React.createElement("h2", {className: "section title"}, "FAQ"), 
         React.createElement("div", {className: "faqs"}, 
-          React.createElement("ul", {className: "faq"}
-            /*<li className='qa'>
-              <h4 className='question'>What is LudumDares?</h4>
-              <p>DubHacks is the largest collegiate hackathon in the Pacific Northwest. The first of its kind in the Pacific Northwest, student developers and designers gather at the University of Washington in Seattle campus to form teams and build projects with the goal of creating solutions to real-world problems and learning new technologies. This is the second-ever DubHacks event.</p>
-            </li>
-            <li className='qa'>
-              <h4 className='question'>Who can attend?</h4>
-              <p>Undergraduate university and high school students of all backgrounds are encouraged to apply and attend DubHacks.</p>
-            </li>
-            <li className='qa'>
-              <h4 className='question'>Where is it?</h4>
-              <p>The opening and closing ceremonies will take place in Kane Hall on the University of Washington campus. Hacking and other activities will take place in Johnson Hall and Mary Gates Hall.</p>
-            </li>
-            <li className='qa'>
-              <h4 className='question'>What about travel reimbursement?</h4>
-              <p>We will provide travel reimbursement to select participants. Up to $150 travel reimbursement for out-of-state students and up to $50 for in-state participants provided a valid receipt.</p>
-            </li>
-            <li className='qa'>
-              <h4 className='question'>How much does this event cost?</h4>
-              <p>Absolutely free. We will provide you WiFi, meals, caffeine, swag, and the workspace.</p>
-            </li>
-            <li className='qa'>
-              <h4 className='question'>What should I build?</h4>
-              <p>Anything really. The project is up to you and your team. You have 24 hours to make anything, ranging from web apps, desktop apps, mobile apps, or even hardware.</p>
-            </li>
-          </ul>
-          <ul className='faq'>
-            <li className='qa'>
-              <h4 className='question'>How big are teams?</h4>
-              <p>A team can be as big as 5 people. We'll help with pairing team members if you don't come with one.</p>
-            </li>
-            <li className='qa'>
-              <h4 className='question'>How do applications work?</h4>
-              <p>Applications for out-of-state attendees must be submitted by September 18th. All other applications are due October 3rd.</p>
-            </li>
-            <li className='qa'>
-              <h4 className='question'>Will you have hardware prototyping equipment?</h4>
-              <p>Yes. Our partners at MLH will have limited stock of Oculus Rifts, Myo arm-bands, Leap Motions, Arduinos, 3D printers and more to give out to hackers for the duration of the hackathon.</p>
-            </li>
-            <li className='qa'>
-              <h4 className='question'>Are we allowed to build on past projects?</h4>
-              <p>A hackathon is an experience to build on something completely new within a set amount of time. With that in mind, you cannot work on past projects. Using your own APIs or third-party APIs is alright as long as the project is a fresh start.</p>
-            </li>
-            <li className='qa'>
-              <h4 className='question'>What should I bring?</h4>
-              <p>Please bring a laptop, charger, student id and passion! Besides that, a toothbrush, sleeping bag/blanket, and change of clothes is recommended.</p>
-            </li>
+          React.createElement("ul", {className: "faq"}, 
+            React.createElement("li", {className: "qa"}, 
+              React.createElement("h4", {className: "question"}, "What is LudumDares?"), 
+              React.createElement("p", null, 
+                "This is the local chapter of a tri-annual world wide event where people make a game in 48 or 72 hours."
+              )
+            ), 
+            React.createElement("li", {className: "qa"}, 
+              React.createElement("h4", {className: "question"}, "Who can attend?"), 
+              React.createElement("p", null, 
+                "Anyone from absolute beginners to grandmasters. General paths of game creation are programming, art, music, writing, game design, voice acting, and dragon hatchery."
+              )
+            ), 
+            React.createElement("li", {className: "qa"}, 
+              React.createElement("h4", {className: "question"}, "Where is it?"), 
+              React.createElement("p", null, 
+                React.createElement("a", {href: "https://www.google.com/maps/place/SURF+Incubator/@47.6051062,-122.3351185,18z", target: "_blank"}, 
+                  "Seattle Surf Incubator | 999 3rd Ave #700, Seattle, WA 98104"
+                )
+              )
+            ), 
+            React.createElement("li", {className: "qa"}, 
+              React.createElement("h4", {className: "question"}, "Rules?"), 
+              React.createElement("p", null, 
+                "There are a", 
+                React.createElement("a", {href: "http://ludumdare.com/compo/rules/", target: "_blank"}, 
+                  "Jam Rule"
+                ), 
+                "and", 
+                React.createElement("a", {href: "/code-of-conduct", target: "_blank"}, 
+                  "the Code of Conduct"
+                )
+              )
+            ), 
+            React.createElement("li", {className: "qa"}, 
+              React.createElement("h4", {className: "question"}, "How much does this event cost?"), 
+              React.createElement("p", null, "Absolutely ", React.createElement("b", null, "free"), ". We will provide you WiFi, meals, caffeine, swag, and the workspace.")
+            ), 
+            React.createElement("li", {className: "qa"}, 
+              React.createElement("h4", {className: "question"}, "Should I come? Why?"), 
+              React.createElement("p", null, "Just Do it! Because Facebook isn't going to gain you skills, and sleeping at home isn't going to win you any new friends. Now come on. You can do it! One step at a time.")
+            )
+          ), 
+          React.createElement("ul", {className: "faq"}, 
+            React.createElement("li", {className: "qa"}, 
+              React.createElement("h4", {className: "question"}, "Food?"), 
+              React.createElement("p", null, 
+                "+ The awesome people at the", 
+                React.createElement("a", {href: "https://developer.amazon.com/appsandservices/", target: "_blank"}, 
+                  React.createElement("b", null, "Amazon Appstore")
+                ), 
+                "are providing lunch, dinner and snacks throughout the jam"
+              ), 
+              React.createElement("p", null, 
+                "+ There will be omnivore, vegetarian, vegan, pescitarian, and glutton free options. Contact us or let a staff member know if you have dietary restrictions."
+              )
+            ), 
+            React.createElement("li", {className: "qa"}, 
+              React.createElement("h4", {className: "question"}, "Sleep?"), 
+              React.createElement("p", null, 
+                "+ The hackathon space will be open for the entire jam including overnight. We actually recommend sleeping when you're tired, so that you can give your all to your projects."
+              ), 
+              React.createElement("p", null, 
+                "+ Bringing your blankets, pillows, and sleeping bags may help your resting experiences."
+              )
+            ), 
+            React.createElement("li", {className: "qa"}, 
+              React.createElement("h4", {className: "question"}, "What should I bring?"), 
+              React.createElement("p", null, 
+                "+ Please bring a laptop, charger, and passion! Besides that, a toothbrush, sleeping bag/blanket, and change of clothes is recommended."
+              ), 
+              React.createElement("p", null, 
+                "+ Don't forget to bring extra things you may need such as extension cord, mice, headphones, drawing devices, keyboards, chargers, usb cables, ect..."
+              )
+            )
+            /*
             <li className='qa'>
               <h4 className='question'>I have a different question. Who can I ask?</h4>
-              <p>Reach out to us at via <a href='http://twitter.com/dubhacks'>Twitter</a>, <a href='http://facebook.com/uwhacks'>Facebook</a>, or send an email to <a href='mailto:info@dubhacks.co'>info@dubhacks.co</a>.</p>
-            </li>*/
+              <p>
+                Reach out to us at via
+                <a href='http://twitter.com/dubhacks'>Twitter</a>,
+                <a href='http://facebook.com/uwhacks'>Facebook</a>, or send an email to
+                <a href='mailto:info@dubhacks.co'>info@dubhacks.co</a>.
+              </p>
+            </li>
+            */
           )
         )
       )
@@ -22376,7 +22411,7 @@ module.exports = React.createClass({displayName: "exports",
                 )
               ), 
               React.createElement("li", null, 
-                React.createElement("a", {href: "/code-of-conduct.pdf"}, "Code of Conduct")
+                React.createElement("a", {href: "/code-of-conduct", target: "_blank"}, "Code of Conduct")
               )
               /*
               <li><a href='https://github.com/dubhacks/15f'>View Source</a></li>

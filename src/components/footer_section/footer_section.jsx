@@ -35,7 +35,7 @@ module.exports = React.createClass({
                 </a>
               </li>
               <li>
-                <a href='/code-of-conduct.pdf'>Code of Conduct</a>
+                <a href='/code-of-conduct' target='_blank'>Code of Conduct</a>
               </li>
               {/*
               <li><a href='https://github.com/dubhacks/15f'>View Source</a></li>
